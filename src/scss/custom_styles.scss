@@ -1,0 +1,88 @@
+.padding {
+  @media (min-width: 640px) {
+    padding: 64px;
+  }
+  padding: 40px 24px;
+
+  &X {
+    @media (min-width: 640px) {
+      padding: 0 40px;
+    }
+    padding: 0 24px;
+  }
+
+  &Y {
+    @media (min-width: 640px) {
+      padding: 0 40px;
+    }
+    padding: 0 24px;
+  }
+}
+
+.heroHeadText {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 8px;
+  
+  @media (min-width: 1024px) {
+    font-size: 80px;
+    line-height: 98px;
+  }
+
+  @media (min-width: 640px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: $small_screen_value) {
+    font-size: 50px;
+  }
+}
+
+.heroSubText {
+  color: #dfd9ff;
+  font-weight: 500;
+  font-size: 16px;
+
+  @media (min-width: 1024px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: 640px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: $small_screen_value) {
+    font-size: 20px;
+  }
+}
+
+.sectionHeadText {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 30px;
+
+  @media (min-width: 1024px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 640px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $small_screen_value) {
+    font-size: 40px;
+  }
+}
+
+.sectionSubText {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $secondary_color;
+
+  @media (min-width: 640px) {
+    font-size: 18px;
+  }
+}

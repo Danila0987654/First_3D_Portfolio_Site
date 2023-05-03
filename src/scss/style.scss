@@ -1,0 +1,20 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$primary_color: #050816;
+$secondary_color: #aaa6c3;
+$tertiary_color: #151030;
+$black_100_color: #100d25;
+$black_200_color: #090325;
+$white_100_color: #f3f3f3;
+
+$default_box_shadow: 0px 35px 120px -15px #211e35;
+$default_background_image: url(/src/assets/herobg.png);
+$small_screen_value: 450px;
+
+
+@import "custom_styles";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
