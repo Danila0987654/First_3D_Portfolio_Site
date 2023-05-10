@@ -1,9 +1,26 @@
+import { BrowserRouter } from "react-router-dom";
+
+import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas} from "./components"
+
 const App = () => {
     return (
-        <div>
-            <p>3D Developer Portfolio</p>
-            <button className="btn btn-primary">Primary button</button>
-        </div>
+        <BrowserRouter>
+            <div>
+                <div className="navbarElements">
+                    <Navbar/>
+                    <Hero/>
+                </div>
+                <About/>
+                <Experience/>
+                <Tech/>
+                <Works/>
+                <Feedbacks/>
+                <div className="star_section">
+                    <Contact/>
+                    <StarsCanvas/>
+                </div>
+            </div>
+        </BrowserRouter>
     )
 }
 
