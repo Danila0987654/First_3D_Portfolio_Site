@@ -12,6 +12,7 @@
     position: fixed;
     top: 0;
     z-index: 20;
+    background-color: $primary_color;
 
     &_elements {
       width: 100%;
@@ -26,6 +27,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      text-decoration: none;
     }
 
     &_logo {
@@ -45,6 +47,40 @@
 
         @media (min-width: 640px) {
           display: block;
+        }
+      }
+    }
+
+    &_menu {
+      list-style-type: none;
+      display: none;
+      flex-direction: row;
+      gap: 40px;
+      text-decoration: none;
+      @media (min-width: 640px) {
+        display: flex;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+
+      &_active {
+        a {
+          color: #ffffff;
+        }
+      }
+
+      &_notactive {
+        a {
+          color: $secondary_color;
         }
       }
     }

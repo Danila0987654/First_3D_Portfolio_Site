@@ -21,6 +21,21 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className="navbar_logo"/>
                     <p className="navbar_logo_text">Danila <span className="navbar_logo_span">| Developer</span></p>
                 </Link>
+
+                <ul className="navbar_menu">
+                    {navLinks.map((Link) => (
+                        <li
+                            key={Link.id}
+                            className={`${
+                                active === Link.title ? "navbar_menu_active" : "navbar_menu_notactive"
+                            }`}
+                            onClick={() => setActive(Link.title)}
+                        >
+                            <a href={`#${Link.id}`}>{Link.title}</a>
+                        </li>
+                    ))}
+
+                </ul>
             </div>
         </nav>
     )
