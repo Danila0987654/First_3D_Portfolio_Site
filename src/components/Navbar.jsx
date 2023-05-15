@@ -19,6 +19,7 @@ const Navbar = () => {
                       }}
                 >
                     <img src={logo} alt="logo" className="navbar_logo"/>
+                    <p className="navbar_logo_text">Danila <span className="navbar_logo_span">| Developer</span></p>
                 </Link>
             </div>
         </nav>

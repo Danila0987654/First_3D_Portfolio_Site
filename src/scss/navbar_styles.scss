@@ -29,9 +29,24 @@
     }
 
     &_logo {
-      width: 100px;
-      height: 100px;
+      width: 60px;
+      height: 60px;
       object-fit: contain;
+
+      &_text {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        cursor: pointer;
+      }
+
+      &_span {
+        display: none;
+
+        @media (min-width: 640px) {
+          display: block;
+        }
+      }
     }
   }
 }
