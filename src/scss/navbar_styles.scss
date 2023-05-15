@@ -101,6 +101,41 @@
         object-fit: contain;
         cursor: pointer;
       }
+
+      &_elements {
+        padding: 24px;
+        position: absolute;
+        top: 80px; right: 0;
+
+        min-width: 140px;
+        z-index: 10;
+
+        &_hidden {
+          display: none;
+        }
+
+        &_active {
+          display: flex;
+        }
+
+        .navbar_menu {
+          border-radius: 12px;
+          margin: 8px 16px;
+          list-style-type: none;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 16px;
+          padding: 20px 0 20px 20px;
+
+          a {
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }

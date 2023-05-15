@@ -40,6 +40,25 @@ const Navbar = () => {
                 <div className="navbar_hamburger">
                     <img src={toggle ? close : menu} alt="menu" className="navbar_hamburger_picture"
                          onClick={() => setToggle(!toggle)}/>
+                    <div className={`${!toggle ? "navbar_hamburger_elements_hidden" 
+                        : "navbar_hamburger_elements_active"} navbar_hamburger_elements`}>
+                        <ul className="navbar_menu black-gradient">
+                            {navLinks.map((Link) => (
+                                <li
+                                    key={Link.id}
+                                    className={`${
+                                        active === Link.title ? "navbar_menu_active" : "navbar_menu_notactive"
+                                    }`}
+                                    onClick={() =>  {
+                                        setToggle(!toggle);
+                                        setActive(Link.title);
+                                    }}
+                                >
+                                    <a href={`#${Link.id}`}>{Link.title}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
