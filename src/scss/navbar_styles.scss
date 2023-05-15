@@ -84,10 +84,23 @@
         }
       }
     }
-  }
-}
 
-.star_section {
-  position: relative;
-  z-index: 0;
+    &_hamburger {
+      display: flex;
+      flex: 1 1 0%;
+      justify-content: end;
+      align-items: center;
+
+      @media (min-width: 640px) {
+        display: none;
+      }
+
+      &_picture {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        cursor: pointer;
+      }
+    }
+  }
 }

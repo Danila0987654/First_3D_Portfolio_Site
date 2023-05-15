@@ -34,8 +34,11 @@ const Navbar = () => {
                             <a href={`#${Link.id}`}>{Link.title}</a>
                         </li>
                     ))}
-
                 </ul>
+
+                <div className="navbar_hamburger">
+                    <img src={menu} alt="menu" className="navbar_hamburger_picture"/>
+                </div>
             </div>
         </nav>
     )
