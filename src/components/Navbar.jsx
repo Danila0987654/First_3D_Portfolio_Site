@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
+
+import { styles} from "../styles.js";
+import { navLinks} from "../constants/index.js";
+import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
+    const [active, setActive] = useState("");
+
+    return (
+        <nav className={`${styles.paddingX} navbar`}>
+            <div className="navbar_elements">
+                <Link to="/"
+                      className="navbar_link"
+                      onClick={() => {
+                          setActive("");
+                          window.scrollTo(0, 0);
+                      }}
+                >
+                    <img src={logo} alt="logo" className="navbar_logo"/>
+                </Link>
+            </div>
+        </nav>
+    )
 }
 
 export default Navbar

@@ -1,8 +1,39 @@
-.navbarElements {
+.navbarDIV {
   background-image: $default_background_image;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+
+    &_elements {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    &_link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &_logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  }
 }
 
 .star_section {

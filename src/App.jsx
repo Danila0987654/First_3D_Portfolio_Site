@@ -6,7 +6,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <div>
-                <div className="navbarElements">
+                <div className="navbarDIV">
                     <Navbar/>
                     <Hero/>
                 </div>
