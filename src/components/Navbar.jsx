@@ -7,6 +7,7 @@ import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
     const [active, setActive] = useState("");
+    const [toggle, setToggle] = useState(false);
 
     return (
         <nav className={`${styles.paddingX} navbar`}>
@@ -37,7 +38,8 @@ const Navbar = () => {
                 </ul>
 
                 <div className="navbar_hamburger">
-                    <img src={menu} alt="menu" className="navbar_hamburger_picture"/>
+                    <img src={toggle ? close : menu} alt="menu" className="navbar_hamburger_picture"
+                         onClick={() => setToggle(!toggle)}/>
                 </div>
             </div>
         </nav>
