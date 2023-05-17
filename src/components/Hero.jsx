@@ -9,7 +9,7 @@ import Computers from "./canvas/Computers.jsx";
 
 const Hero = () => {
     return (
-        <section className="navbarSection">
+        <section className="heroSection">
             <div className={`${styles.paddingX} textSection`}>
                 <div className="decoration">
                     <div className="dot_begin"/>
@@ -23,6 +23,24 @@ const Hero = () => {
                 </div>
             </div>
             <ComputersCanvas/>
+
+            <div className="animationNextSection">
+                <a href="#about">
+                    <div className="rectangle">
+                        <motion.div
+                            animate={{
+                                y: [0, 24, 0]
+                            }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                repeatType: 'loop'
+                            }}
+                            className="ball"
+                        />
+                    </div>
+                </a>
+            </div>
         </section>
     )
 }
