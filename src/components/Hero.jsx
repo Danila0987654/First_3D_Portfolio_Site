@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles.js";
 import { ComputersCanvas } from "./canvas"
+import {Canvas} from "@react-three/fiber";
+import {Suspense} from "react";
+import {OrbitControls, Preload} from "@react-three/drei";
+import Computers from "./canvas/Computers.jsx";
 
 const Hero = () => {
     return (
