@@ -36,5 +36,23 @@
         }
       }
     }
+
+    .text {
+      span {
+        color: #915eff;
+      }
+
+      .subtext {
+        margin-top: 8px;
+
+        br {
+          display: none;
+
+          @media (min-width: 640px) {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
