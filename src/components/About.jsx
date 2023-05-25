@@ -13,6 +13,13 @@ const About = () => {
           <p className={styles.sectionSubText}>Introducing</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
         </motion.div>
+
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="about-text">
+              I'm a programmer with experience in Python, C++, C#, JavaScript, SQL. Able to write sites on Flask and has
+              an experience in testing of programs in different operation system and function testing of web application.
+          </motion.p>
       </>
   )
 }
