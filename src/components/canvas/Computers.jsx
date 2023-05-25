@@ -44,7 +44,7 @@ const ComputersCanvas = () => {
         return () => {
             mediaQuery.removeEventListener("change", handleMediaQueryChange);
         }
-    })
+    }, [])
 
     return (
         <Canvas frameloop="demand"
